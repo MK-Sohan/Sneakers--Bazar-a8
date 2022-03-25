@@ -8,7 +8,10 @@ const Cart = (props) => {
  
     return (
         <div>
-            <h1>Name:</h1>
+            {
+                cart.map(item=><h1>Name:{item.name}</h1>)
+            }
+            
             <button className='btn1'>Choose One For Me</button> <br />
             <button className='btn2'>Choose Again</button>
         </div>
