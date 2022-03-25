@@ -1,0 +1,17 @@
+.shope-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin-top: 20px;
+}
+.left-side {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.right-side {
+  background-color: orange;
+  height: 1000px;
+  width: 370px;
+  position: sticky;
+  top: 0;
+}
