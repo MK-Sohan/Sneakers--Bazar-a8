@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Products/Product';
+import Quesans from '../Question/Quesans';
 import './Shope.css'
 
 const Shope = () => {
@@ -25,10 +26,12 @@ const Shope = () => {
                  {
                      products.map(product=><Product handleAddtoCart={handleAddtoCart}  key={product.id} product={product}></Product>)
                  }
-                  </div>   
+                  </div>  
+             
             <div className="right-side">
                 <Cart cart={cart}></Cart>
             </div>
+            
         </div>
     );
 };
