@@ -19,7 +19,7 @@ const Shope = () => {
     const handleAddtoCart=(product)=>{
         const exist=cart.find(pd=>pd.id===product.id)
         if(exist){
-            alert('You')
+            alert("You can't add more then one")
             return;
         }
         const newCart=[...cart,product]
