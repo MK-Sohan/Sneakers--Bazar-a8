@@ -16,6 +16,8 @@
   top: 0;
 }
 
+.shope-container h1 {
+}
 @media only screen and (max-width: 644px) {
   .shope-container {
     display: flex;

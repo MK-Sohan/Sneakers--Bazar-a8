@@ -1,3 +1,3 @@
-# AIR JORDAN
+# Sneakers Bazar
 
-Live Website link:-(https://github.com/facebook/create-react-app).
+Live Website link:-(https://unique-figolla-420f02.netlify.app/).

@@ -46,7 +46,9 @@ const chooseone=()=>{
     return (
        
         <div className='shope-container'>
+             
               <div className="left-side">
+                 
                  {
                      products.map(product=><Product handleAddtoCart={handleAddtoCart}  key={product.id} product={product}></Product>)
                  }
