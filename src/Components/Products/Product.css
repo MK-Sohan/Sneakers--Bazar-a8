@@ -35,7 +35,7 @@
 
 @media only screen and (max-width: 644px) {
   .Product-container img {
-    width: 250px;
+    width: 280px;
 
     border-radius: 8px;
     margin-left: 6px;
@@ -43,7 +43,7 @@
   }
 
   .Product-container {
-    width: 260px;
+    width: 290px;
     height: 430px;
     margin-left: 20px;
     border: 1px solid #95a0a7;

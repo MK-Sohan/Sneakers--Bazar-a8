@@ -28,7 +28,7 @@
   background-color: bisque;
 }
 .showchoose img {
-  width: 370px;
+  width: 280px;
 }
 .font {
   margin-left: 5px;
@@ -44,6 +44,9 @@
     border: none;
     border-radius: 8px;
     margin-top: 20px;
+  }
+  .showchoose img {
+    width: 370px;
   }
   .btn2 {
     margin-top: 10px;
