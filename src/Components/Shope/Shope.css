@@ -15,3 +15,26 @@
   position: sticky;
   top: 0;
 }
+
+@media only screen and (max-width: 644px) {
+  .shope-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+  }
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right-side {
+    background-color: orange;
+    height: 700px;
+    width: 270px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}
