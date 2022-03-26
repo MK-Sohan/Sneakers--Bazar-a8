@@ -7,6 +7,7 @@ import './Shope.css'
 const Shope = () => {
     const [products,setProducts]=useState([]);
      const [cart,setProduct]=useState([])
+     const [random,setRandom]=useState([])
 
 
     useEffect(()=>{
@@ -18,7 +19,24 @@ const Shope = () => {
     const handleAddtoCart=(product)=>{
         const newCart=[...cart,product]
         setProduct(newCart);
+        
     }
+    const reset=()=>{
+        setProduct([]);
+         
+        
+    }
+    
+
+const chooseone=()=>{
+    const random=Math.floor(Math.random()*cart.length)
+    setRandom(cart[random])
+    reset()
+     
+         
+
+}
+
     return (
        
         <div className='shope-container'>
@@ -29,7 +47,7 @@ const Shope = () => {
                   </div>  
              
             <div className="right-side">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}  random={random} reset={reset}chooseone={chooseone}></Cart>
             </div>
             
         </div>
