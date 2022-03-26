@@ -3,8 +3,7 @@ import './Cart.css'
 
 const Cart = (props) => {
     const {cart,reset,chooseone,random}=props
-    console.log(random);
-    // console.log(cart);
+   
 
     return (
         <div>
@@ -14,7 +13,7 @@ const Cart = (props) => {
             }
             <div className="showchoose">
 <img src={random.picture} alt="" />
-<h4>Name:{random.name}</h4>
+<h4>{random.name}</h4>
             </div>
             <div className="button">
             <button onClick={chooseone}  className='btn1'>Choose One For Me</button> <br />

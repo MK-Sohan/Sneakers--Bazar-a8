@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Products/Product';
-import Quesans from '../Question/Quesans';
+
 import './Shope.css'
 
 const Shope = () => {
@@ -17,21 +17,27 @@ const Shope = () => {
     },[])
 
     const handleAddtoCart=(product)=>{
+        const exist=cart.find(pd=>pd.id===product.id)
+        if(exist){
+            alert('You')
+            return;
+        }
         const newCart=[...cart,product]
         setProduct(newCart);
+        setRandom([])
         
     }
     const reset=()=>{
-        setProduct([]);
-         
         
+        setProduct([])
+        setRandom([])
     }
     
 
 const chooseone=()=>{
     const random=Math.floor(Math.random()*cart.length)
     setRandom(cart[random])
-    reset()
+    setProduct([]);
      
          
 
